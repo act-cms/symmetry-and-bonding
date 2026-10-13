@@ -1,0 +1,1218 @@
+<<ca21e932-3359-480b-9737-fababccedb33>>
+** # Your Lesson Title Goes Here
+:PROPERTIES:
+:CUSTOM_ID: -your-lesson-title-goes-here
+:END:
+The purpose of this lesson is to help students develop
+cyberinfrastructure (CI) skills in */general list of skill areas etc./*,
+with some applications to */some content applications etc/*.
+
+<<8902e320-631d-46b5-97ac-6e0f97d63c7d>>
+** Lesson Information
+:PROPERTIES:
+:CUSTOM_ID: lesson-information
+:END:
+
+<<bce4061e-36cc-45da-9da9-f81a53dac6ef>>
+*** Lesson Learning Outcomes (LOs)
+:PROPERTIES:
+:CUSTOM_ID: lesson-learning-outcomes-los
+:END:
+
+<<19661fb9-6c25-46e1-9f6c-6065512a95b3>>
+**** Cyberinfrastructure LOs
+:PROPERTIES:
+:CUSTOM_ID: cyberinfrastructure-los
+:END:
+
+<<511f1d41-3252-4c2a-8e26-4a69d9bf60d4>>
+By the end of this lesson, students will be able to perform the
+following cyberinfrastructure (CI) tasks:
+
+1. Include your list of CI LOs here
+2. They should be actionable and individually assessable
+3. There shouldn't be too many LOs, otherwise you might be trying to do
+   to much in a single lesson
+4. Yadda yadda CI skill yadda yadda
+
+<<859aad1e-7322-459e-a42e-cc39a87222b3>>
+**** Content LOs
+:PROPERTIES:
+:CUSTOM_ID: content-los
+:END:
+
+<<f8826db5-aac1-4663-80a1-ae23a054e599>>
+By the end of this lesson, students will be able to...
+
+1. If your lesson also teaches course content, divide that into a
+   separate list of LOs
+2. They should be actionable and individually assessable
+3. There shouldn't be too many LOs, otherwise you might be trying to do
+   to much in a single lesson
+4. Yadda yadda content understanding yadda yadda
+
+<<d4fb7c75-173d-4a13-a25f-547353a89b8e>>
+*** Lesson Prerequisites
+:PROPERTIES:
+:CUSTOM_ID: lesson-prerequisites
+:END:
+
+<<37733272-fae0-4981-84c2-fc27de048abe>>
+**** Cyberinfrastructure Prereq's
+:PROPERTIES:
+:CUSTOM_ID: cyberinfrastructure-prereqs
+:END:
+
+<<e0a7e0da-3d8a-4de0-992a-c6d3d31e1d1d>>
+Before beginning this lesson, students are expected to have the
+following CI skills:
+
+1. First list of CI skills students will need
+   - Link to the ACT-CMS lesson or external resource which teaches them
+     the first set of skills
+2. Second list of CI skills students will need
+   - Link to the ACT-CMS lesson or external resource which teaches them
+     the second set of skills
+3. Etc.
+
+<<1fd3c29b-30a7-40fc-a80a-b40a92b667f4>>
+**** Content Prereq's
+:PROPERTIES:
+:CUSTOM_ID: content-prereqs
+:END:
+
+<<1cdce639-9d0a-4ac2-b833-3baf44e736e5>>
+Before beginning this lesson, students are expected to be familiar with
+the following content topics:
+
+1. If your lesson assumes content knowledge, list that here
+2. Make sure you also list the coursework and/or level of understanding
+   for each topic
+3. Also think about directing students to a resource to learn the
+   material if relevant
+4. Etc.
+
+<<35c211a2-7c32-42ce-890d-e00b2bea0829>>
+*** Resources
+:PROPERTIES:
+:CUSTOM_ID: resources
+:END:
+
+<<2538db43-ed1b-4d9c-ab99-f4b077451fba>>
+**** Cyberinfrastructure Resources
+:PROPERTIES:
+:CUSTOM_ID: cyberinfrastructure-resources
+:END:
+
+<<c9f6e381-4fc5-4112-a8bb-d3bdf9fe7802>>
+1. If there's a list of CI resources that would be helpful for students
+   beyond the CI prereqs, list that here
+2. Could include link to MolSSI workshop materials
+3. Could include link to library documentation (e.g., NumPy, SymPy,
+   etc.)
+
+<<a14ea09d-674f-408f-a982-d921b99d2716>>
+**** Content Resources
+:PROPERTIES:
+:CUSTOM_ID: content-resources
+:END:
+
+<<601c8f7c-15ba-4fda-9367-3c1df5ba18e3>>
+1. If there's a resource that students could use for content information
+   beyond prereq materials, list here
+2. Lots of open-access versions of textbooks available on LibreTexts,
+   check there
+3. Also check to see if you could refer to various OpenStax books like
+   [[https://openstax.org/details/books/chemistry-2e][OpenStax Chemistry 2e (launch ↗️)]]
+4. If you insert a link into a Markdown cell, JupyterLab doesn't
+   highlight the link by default. So add some decorator like the
+   "(launch ↗️)" in the item above to make it clear where to click
+5. When inserting links, please make the text you're embedding the link
+   within descriptive enough for screenreader accessibility
+
+<<4f074a14-f4cb-4142-9b04-29d058470881>>
+*** References
+:PROPERTIES:
+:CUSTOM_ID: references
+:END:
+
+<<068abcdc-4e15-42a3-85f4-358dff7f7386>>
+Portions of this lesson were adapted from:
+
+1. If you borrowed examples, text, explanations, etc. from anywhere for
+   your lesson, please cite them here!
+2. [[https://openstax.org/details/books/chemistry-2e][OpenStax Chemistry 2e (launch ↗️)]]
+
+<<e9d24401-4a58-4346-bf99-e1bd07b0286b>>
+** Lesson Setup
+:PROPERTIES:
+:CUSTOM_ID: lesson-setup
+:END:
+
+<<1e06bc93-5fca-4b82-9c2e-93dc7715df07>>
+If your lesson requires students use a particular set of
+libraries/modules/packages/etc. or sets default notebook options for
+proper functionality, it is strongly recommended you pre-fill cells with
+that code to avoid errors!
+
+Whenever you want your students to do something, consider using a
+callout like the one below to catch their attention:
+
+<<89bb3454-095e-4e14-a57f-da239f82b893>>
+:::{warning}⚒️ Execute: Importing necessary packages :icon: false
+
+Execute the cell below to ensure all necessary Python libraries are
+loaded. :::
+
+#+begin_src jupyter-python
+# EXECUTE: Import some packages that we will use later
+from algebra_with_sympy import * # Automatically imports sympy
+algwsym_config.output.solve_to_list = True # Makes automatic solution outputs a list for usability
+from math import log10
+from sympy.codegen.cfunctions import log10 as sylog10# Makes common logarithm available as log10()
+print("This notebook is running Algebra_with_Sympy version " + str(algwsym_version)+".")
+#+end_src
+
+#+begin_example
+This notebook is running Algebra_with_Sympy version 1.1.3.
+#+end_example
+
+<<8b0ca2f8-e3e3-4788-b4c2-ef33bcd0205b>>
+** Markdown Cells
+:PROPERTIES:
+:CUSTOM_ID: markdown-cells
+:END:
+
+<<9afe0947-162d-4a03-b1bf-d57218f8202d>>
+Markdown is a markup language (kinda like HTML) but which makes
+formatting really easy. Long lines in a Markdown cell will wrap
+automatically, however if your first line is long, JupyterLab will hide
+the cell editing buttons that are visible in the top right corner.
+Because blank lines don't actually add vertical space to the formatted
+text, however, just start writing on line 2 to keep these buttons
+visible!
+
+<<65f268c8-6521-4752-8995-67c31e453d0b>>
+*** Basic Markdown Formatting
+:PROPERTIES:
+:CUSTOM_ID: basic-markdown-formatting
+:END:
+
+<<c87d954b-42df-4f2f-b33f-ec323f93bf45>>
+Some basic Markdown syntax that you'll likely use a lot is demonstrated
+below:
+
+<<6b71d316-7024-43a1-abde-b683b21b455d>>
+**** Text Emphasis
+:PROPERTIES:
+:CUSTOM_ID: text-emphasis
+:END:
+
+<<b4ec6309-5a24-4d49-bb39-e97cd514b2a9>>
+You can use Markdown to /add emphasis/, *write in boldface*, or */even
+do both simultaneously/* to make certain text pop. You can also
+=make the text monospace= for in-line code formatting.
+
+<<3ee8772f-104d-4530-9416-d019713bd748>>
+**** Block Quotes
+:PROPERTIES:
+:CUSTOM_ID: block-quotes
+:END:
+
+<<c5ad887a-d205-419e-b837-f846bccb09f7>>
+
+#+begin_quote
+You can make block quotes to drive home a point...
+#+end_quote
+
+#+begin_quote
+Or you can add attribution to someone. Just make sure there's at least
+one blank line between each quote block to force Markdown to separate
+them! Otherwise, they'll be smushed together.
+
+~ ---Somebody McWhatstheirname
+#+end_quote
+
+<<20d1bb80-7031-4508-9c31-f6b4b3236170>>
+**** Typesetting Mathematics using \(\LaTeX\)
+:PROPERTIES:
+:CUSTOM_ID: typesetting-mathematics-using-latex
+:END:
+
+<<2dbdcc7e-2950-41b7-a4ad-52ebc2ddbdb9>>
+In addition to formatting text, JupyterLab can typeset math using
+\(\LaTeX\). To add math in-line, surround your LaTeX commands in
+single-dollar-signs (=$...$=), but wrap in double-dollar-signs for
+display-style: \[y = mx + b\]
+
+It is also possible to use the =align= and =equation= environments, but
+don't push your luck beyond those.
+
+<<e924dd32-1f45-446e-8de6-da0c6d2c9f10>>
+**** Tables
+:PROPERTIES:
+:CUSTOM_ID: tables
+:END:
+
+<<ce544a46-9455-4192-bbdf-ed9020408359>>
+Markdown tables look like this:
+
+| Default Column | Left-Justified Column | Centered Column | Right-Justified Column | Etc. |
+|----------------+-----------------------+-----------------+------------------------+------|
+| Something      | that you want to      | include         | in a table             | row. |
+| Can also       | include math inside   | with            | \(\LaTeX\) in a cell   | too! |
+
+<<6bb154d4-d30b-4e66-b46b-80a9951a18cf>>
+**** Code Blocks
+:PROPERTIES:
+:CUSTOM_ID: code-blocks
+:END:
+
+<<3b960302-fd93-4b43-969f-db162011d6a8>>
+Basic Markdown also allows you to format multi-line blocks of code,
+defined between matching lines of backtics:
+
+#+begin_src markdown
+    ```language-name
+    code code code
+    some more code
+    ...
+    and even more code
+    ```
+#+end_src
+
+which can also use syntax highlighting if the language is specified,
+like the below for Python:
+
+#+begin_src python
+def my_function():
+    """Uses default Python colors for syntax highlighting if language
+    is specified after code block backticks!"""
+    # Comments are formatted too
+    raise Exception("blah")
+    pass
+#+end_src
+
+<<2a09416c-68d9-49e9-893f-54adfd9d496e>>
+*** Enhanced Formatting with MyST
+:PROPERTIES:
+:CUSTOM_ID: enhanced-formatting-with-myst
+:END:
+
+<<f4267ab4-276f-483a-b116-e3c2093d5c73>>
+The basic markdown formatting above will get you ~90% of the way there,
+but JupyterLab can be configured to go beyond these basics with Markedly
+Structured Text (MyST)-flavored markdown. JupyterLab launched through
+the JuypterHub server on ChemCompute is automatically configured to
+render MyST, so you can use this to make your students' experience even
+more visually intuitive!
+
+<<672f8520-ca5d-4b22-9508-cabb4c6ebe89>>
+MyST can get extremely fancy, so
+[[https://mystmd.org/][refer to the full MySTMD documentation (launch ↗️)]]
+and the
+[[https://mystmd.org/guide/quickstart-jupyter-lab-myst][tutorial for using MyST within Jupyter interfaces (launch ↗️)]]
+for more details.
+
+<<6cd9172f-75c7-4e67-ad78-6e818313caeb>>
+*** General Advice for Markdown Cells
+:PROPERTIES:
+:CUSTOM_ID: general-advice-for-markdown-cells
+:END:
+
+<<3cd71965-a20c-4101-8052-599b27a3c056>>
+Some general advice for Markdown cells, both with basic Markdown and
+MyST:
+
+1. Use Markdown headers to add structure to your lesson and enable
+   navigation using JupyterLab's native table-of-contents.
+2. Keep Markdown headers in their own cells without text, then the whole
+   (sub)section can be collapsed under the header cell
+3. Don't make Markdown cells too long vertically, JupyterLab scrolling
+   can be an erratic pain in the ass when there are long cells present
+   in the notebook.
+
+<<03f62424-a57f-40dd-a413-4e82259bdac8>>
+** Designing Your Lesson
+:PROPERTIES:
+:CUSTOM_ID: designing-your-lesson
+:END:
+
+<<bf9403c0-4db3-4720-aedc-0763b92ced7c>>
+There are /lots/ of different frameworks and strategies for designing
+the structure of your lesson. Despite this diversity, a single theme
+unifies all successful lesson design strategies: active learning.
+Including some written instructional narrative is necessary, however
+they should spend way more time /doing the coding/ in the lesson than
+reading about it beforehand. Plus, their attention spans are short, so
+the sooner you prompt your students to apply something you have
+introduced, the better the information will stick!
+
+<<ca8f9e3c-c769-4201-9628-c65e6978f95f>>
+*** Recommended Structure for Student Coding Activity
+:PROPERTIES:
+:CUSTOM_ID: recommended-structure-for-student-coding-activity
+:END:
+
+<<3fe40f27-7778-45e3-a152-bcb88945d385>>
+When prompting student participation in the lesson, the following is a
+good four-notebook-cell structure:
+
+1. Prompt (markdown cell)
+   - Write the prompt as a MyST callout/exercise block as a clear call
+     to action
+   - Make sure the instructions are clear! Unless thinking of the
+     algorithm is the point, the instructions should almost read like
+     pseudocode.
+2. "Blank" student code entry (code cell)
+   - Line 1: =# YOUR TURN: ...= comment to make it clear that they're
+     being prompted to act
+   - Line 2: Blank line to focus student attention to where they'll
+     enter their code
+3. Completed code key (code cell)
+   - Line 1: =# YOUR TURN: ...= comment identical to student entry cell
+   - Rest of the cell should contain the instructor's code key that
+     completes the prompted task
+4. Student Learning Check (markdown cell)
+   - Provide some way for students to check their work!
+   - Ideas:
+     - JupyterQuiz question to check correctness of their output
+     - JupyterQuiz question to prompt & store a reflection statement
+     - A MyST callout block of class =dropdown= containing some amount
+       of the code key and/or expected output (collapsed by default)
+     - A MyST solution block tied back to exercise prompt (still good
+       idea to declare this as a collapsed dropdown)
+
+<<230ff870-8cd3-499c-b0d7-078a96eac70c>>
+**** Example Coding Activity
+:PROPERTIES:
+:CUSTOM_ID: example-coding-activity
+:END:
+
+<<96edccc8-3b4d-4dd0-b09b-3d3eb42f0312>>
+:::{warning}⚒️ Your Turn: Prompt your students to write some code! :icon:
+false
+
+Call your students to action to write some code to complete a task that
+applies a skill you introduced earlier. For example:
+
+In the cell below,
+
+1. Define a =list= of =str= containing students enrolled in the class
+2. Write a =for= loop which iterates over the list of students and
+   prints each name together with the number of non-whitespace
+   characters :::
+
+#+begin_src jupyter-python
+# YOUR TURN: Iterating with a for loop
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Iterating with a for loop
+students = ["Emily ", "Ethan  ", "  Dave", "Melanie", "Emma", "Alex", "Bailey"]
+for student in students:
+    print(f"Number of non-whitespace characters in '{student}': {len(student.strip())}")
+#+end_src
+
+#+begin_example
+Number of non-whitespace characters in 'Emily ': 5
+Number of non-whitespace characters in 'Ethan  ': 5
+Number of non-whitespace characters in '  Dave': 4
+Number of non-whitespace characters in 'Melanie': 7
+Number of non-whitespace characters in 'Emma': 4
+Number of non-whitespace characters in 'Alex': 4
+Number of non-whitespace characters in 'Bailey': 6
+#+end_example
+
+<<efcce61a-468b-4620-a933-28f98a86dbea>>
+:::{warning}✅ Check Yourself :[[icon:false]] :class:dropdown
+={code}python :linenos: :filename:Python Input # YOUR TURN: Iterating with a for loop students = ["Emily ", "Ethan  ", "  Dave", "Melanie", "Emma", "Alex", "Bailey"] for student in students:     print(f"Number of non-whitespace characters in '{student}': {len(student.strip())}")=
+={code}txt :filename:Cell Output Number of non-whitespace characters in 'Emily ': 5 Number of non-whitespace characters in 'Ethan  ': 5 Number of non-whitespace characters in '  Dave': 4 Number of non-whitespace characters in 'Melanie': 7 Number of non-whitespace characters in 'Emma': 4 Number of non-whitespace characters in 'Alex': 4 Number of non-whitespace characters in 'Bailey': 6=
+:::
+
+<<72dc407c-4860-411a-8ece-c493cc2c2da9>>
+** End-of-Lesson Exercises
+:PROPERTIES:
+:CUSTOM_ID: end-of-lesson-exercises
+:END:
+
+<<9ec5c983-bc35-424f-987b-dbb8522d516e>>
+Finally, once students have completed the lessson, you should include a
+few final exercises for students to complete that require students
+successfully demonstrate mastery of the lesson's learning objectives
+(LOs).
+
+<<bb4c3595-7697-411f-b136-622184965044>>
+*** Thermochemistry
+:PROPERTIES:
+:CUSTOM_ID: thermochemistry
+:END:
+:::{exercise} Heat Transfer & Calorimetry \(\vert\)
+[[https://openstax.org/books/chemistry-2e/pages/5-2-calorimetry][OpenStax $\S$5.2 ↗️]]
+:label:ex:calorimetry A 360.0-g piece of rebar (a steel rod used for
+reinforcing concrete) is dropped into 425 mL of water (density 1.00
+g/mL) at 24.0°C. The final temperature of the water was measured as
+42.7°C. Calculate the initial temperature of the piece of rebar. Assume
+the specific heat of steel is approximately the same as that for iron
+(Table 5.1), and that all heat transfer occurs between the rebar and the
+water (there is no heat exchange with the surroundings). :::
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+## Declaring variables
+var('q_r m_r C_r T_r', real=True) # Rebar properties
+var('q_w m_w C_w T_w', real=True) # Water properties
+var('T_f', real=True) # Common final temperature
+
+## Declaring numerical values for variables
+m_r_val = 360.0 # in grams
+C_r_val = 0.449 # in J / g / degreesC
+
+m_w_val = 425.0 # in grams
+C_w_val = 4.184 # in J / g / degreesC
+T_w_val = 24.0 # in degreesC
+
+T_f_val = 42.7 # in degreesC
+
+## Define general equations to use
+E_conserv =@ q_r + q_w = 0 # Energy conservation
+rebar_heat =@ q_r = m_r*C_r*(T_f - T_r) # Heat change from perspective of rebar
+water_heat =@ q_w = m_w*C_w*(T_f - T_w) # Heat change from perspective of water
+
+## Substitute water_heat & rebar_heat expressions into E_conserv to make problem equation
+problem = E_conserv.subs({q_r:rebar_heat.rhs, q_w:water_heat.rhs})
+
+## Substitute numerical values into problem equation
+problem = problem.subs({m_r: m_r_val,
+                        C_r: C_r_val,
+                        m_w: m_w_val,
+                        C_w: C_w_val,
+                        T_w: T_w_val,
+                        T_f: T_f_val
+                       })
+
+## Rearrange problem eqn for initial rebar temperature (will be in degreesC)
+solve(problem, T_r)[0].evalf()
+#+end_src
+
+#+RESULTS:
+: Equation(T_r, 248.418510269735)
+
+<<d63d45e1-0924-4482-94db-a27dd9c26fb3>>
+~~~{solution}ex:calorimetry :class:dropdown :open:false One possible
+solution for the problem could be
+
+```{code}python :linenos: :filename:Python Input
+
+* YOUR TURN: Solve the exercise above here!
+:PROPERTIES:
+:CUSTOM_ID: your-turn-solve-the-exercise-above-here
+:END:
+** Declaring variables
+:PROPERTIES:
+:CUSTOM_ID: declaring-variables
+:END:
+var('q_r m_r C_r T_r', real=True) # Rebar properties var('q_w m_w C_w
+T_w', real=True) # Water properties var('T_f', real=True) # Common final
+temperature
+
+** Declaring numerical values for variables
+:PROPERTIES:
+:CUSTOM_ID: declaring-numerical-values-for-variables
+:END:
+m_r_val = 360.0 # in grams C_r_val = 0.449 # in J / g / degreesC
+
+m_w_val = 425.0 # in grams C_w_val = 4.184 # in J / g / degreesC T_w_val
+= 24.0 # in degreesC
+
+T_f_val = 42.7 # in degreesC
+
+** Define general equations to use
+:PROPERTIES:
+:CUSTOM_ID: define-general-equations-to-use
+:END:
+E_conserv =@ q_r + q_w = 0 # Energy conservation rebar_heat =@ q_r =
+m_r/C_r/(T_f - T_r) # Heat change from perspective of rebar water_heat
+=@ q_w = m_w/C_w/(T_f - T_w) # Heat change from perspective of water
+
+** Substitute water_heat & rebar_heat expressions into E_conserv to make problem equation
+:PROPERTIES:
+:CUSTOM_ID: substitute-water_heat--rebar_heat-expressions-into-e_conserv-to-make-problem-equation
+:END:
+problem = E_conserv.subs({q_r:rebar_heat.rhs, q_w:water_heat.rhs})
+
+** Substitute numerical values into problem equation
+:PROPERTIES:
+:CUSTOM_ID: substitute-numerical-values-into-problem-equation
+:END:
+problem = problem.subs({m_r: m_r_val, C_r: C_r_val, m_w: m_w_val, C_w:
+C_w_val, T_w: T_w_val, T_f: T_f_val })
+
+** Rearrange problem eqn for initial rebar temperature (will be in degreesC)
+:PROPERTIES:
+:CUSTOM_ID: rearrange-problem-eqn-for-initial-rebar-temperature-will-be-in-degreesc
+:END:
+solve(problem, T_r)[0].evalf() ``` :::{note}⏎ Cell Output
+:[[icon:false]] \(T_r = 248.418510269735\) ::: ~~~
+
+<<949318c0-c628-445b-907c-874f11e622ac>>
+*** Atomic Structure
+:PROPERTIES:
+:CUSTOM_ID: atomic-structure
+:END:
+:::{exercise} Energy & Wavelengths of Bohr-Orbit Transitions \(\vert\)
+[[https://openstax.org/books/chemistry-2e/pages/6-2-the-bohr-model][OpenStax $\S$6.2 ↗️]]
+:label:ex:bohr-model What is the energy (in joules) and the wavelength
+(in meters) of the line in the spectrum of hydrogen that represents the
+movement of an electron from Bohr orbit with \(n = 4\) to the orbit with
+\(n = 6\)? In what part of the electromagnetic spectrum do we find this
+radiation? :::
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+## Bohr formula setup
+### Variables
+var('n_f n_i', integer=True, nonzero=True, postivie=True)
+var('dE R_H', real=True)
+
+### Constants & variable values
+R_H_val = 2.179E-18
+n_f_val = 6
+n_i_val = 4
+
+### Equation definition
+bohr =@ dE = -R_H*((1/n_f) - (1/n_i))
+
+## Planck & light wave formulas setup 
+### Variables
+var('E_photon h c lamda nu')
+
+### Constants & variable values
+h_val = 6.626E-34
+c_val = 2.9979E8
+
+### Equation definitions
+lightwave =@ c = lamda*nu
+planck =@ E_photon = h*nu
+
+## Problem Solution
+### Excitation energy
+dE_val = float(bohr.subs({R_H: R_H_val, n_f: n_f_val, n_i: n_i_val}).rhs)
+print(f'dE = {dE_val} J')
+
+### Excitation wavelength
+tosolve = planck.subs({nu: (lightwave/lamda).lhs, E_photon: dE})
+wavelength = solve(tosolve, lamda)[0].subs({dE: dE_val, c: c_val, h: h_val}).evalf()
+lamda_val = float(wavelength.rhs)
+print(f"Excitation wavelength = {lamda_val} m (near IR region)")
+#+end_src
+
+#+begin_example
+dE = 1.8158333333333336e-19 J
+Excitation wavelength = 1.093937699862322e-06 m (near IR region)
+#+end_example
+
+<<d1834c82-5ddf-4840-a9cb-301edcf3ded8>>
+~~~{solution}ex:bohr-model :class:dropdown :open:false One possible
+solution for the problem could be
+
+```{code}python :linenos: :filename:Python Input
+
+* YOUR TURN: Solve the exercise above here!
+:PROPERTIES:
+:CUSTOM_ID: your-turn-solve-the-exercise-above-here
+:END:
+** Bohr formula setup
+:PROPERTIES:
+:CUSTOM_ID: bohr-formula-setup
+:END:
+*** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables
+:END:
+var('n_f n_i', integer=True, nonzero=True, postivie=True) var('dE R_H',
+real=True)
+
+*** Constants & variable values
+:PROPERTIES:
+:CUSTOM_ID: constants--variable-values
+:END:
+R_H_val = 2.179E-18 n_f_val = 6 n_i_val = 4
+
+*** Equation definition
+:PROPERTIES:
+:CUSTOM_ID: equation-definition
+:END:
+bohr =@ dE = -R_H*((1/n_f) - (1/n_i))
+
+** Planck & light wave formulas setup
+:PROPERTIES:
+:CUSTOM_ID: planck--light-wave-formulas-setup
+:END:
+*** Variables
+:PROPERTIES:
+:CUSTOM_ID: variables-1
+:END:
+var('E_photon h c lamda nu')
+
+*** Constants & variable values
+:PROPERTIES:
+:CUSTOM_ID: constants--variable-values-1
+:END:
+h_val = 6.626E-34 c_val = 2.9979E8
+
+*** Equation definitions
+:PROPERTIES:
+:CUSTOM_ID: equation-definitions
+:END:
+lightwave =@ c = lamda/nu planck =@ E_photon = h/nu
+
+** Problem Solution
+:PROPERTIES:
+:CUSTOM_ID: problem-solution
+:END:
+*** Excitation energy
+:PROPERTIES:
+:CUSTOM_ID: excitation-energy
+:END:
+dE_val = float(bohr.subs({R_H: R_H_val, n_f: n_f_val, n_i:
+n_i_val}).rhs) print(f'dE = {dE_val} J')
+
+*** Excitation wavelength
+:PROPERTIES:
+:CUSTOM_ID: excitation-wavelength
+:END:
+tosolve = planck.subs({nu: (lightwave/lamda).lhs, E_photon: dE})
+wavelength = solve(tosolve, lamda)[0].subs({dE: dE_val, c: c_val, h:
+h_val}).evalf() lamda_val = float(wavelength.rhs) print(f"Excitation
+wavelength = {lamda_val} m (near IR region)")
+
+#+begin_example
+```{code}txt
+:filename:Cell Output
+dE = 1.8158333333333336e-19 J
+Excitation wavelength = 1.093937699862322e-06 m (near IR region)
+#+end_example
+
+~~~
+
+<<9704634b-199f-4dfb-acea-7eb890722372>>
+*** Colligative Properties
+:PROPERTIES:
+:CUSTOM_ID: colligative-properties
+:END:
+:::{exercise} Vapor Pressure of an Ideal Solution \(\vert\) [OpenStax
+$\S\(11.4 ↗️](https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties)
+:label:ex:colligative-prop
+Compute the vapor pressure of an ideal solution containing 92.1 g of glycerin, C\)_3\(H\)_5\((OH)\)_3\(, and 184.4 g of ethanol, C\)_2\(H\)_5$OH,
+at 40°C. The vapor pressure of pure ethanol is 0.178 atm at 40°C.
+Glycerin is essentially nonvolatile at this temperature. :::
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+## Define variables for mass, MW, & vapor pressure for each solution component
+gly_mass = 92.1    # g
+gly_MW = 92.094    # g/mol
+Pstar_gly = 0      # atm
+etoh_mass = 184.4  # g
+etoh_MW = 46.069   # g/mol
+Pstar_etoh = 0.178 # atm
+
+## Convert masses of glycerin & ethanol to moles
+gly_mol = gly_mass * (1/gly_MW)
+etoh_mol = etoh_mass * (1/etoh_MW)
+
+## Compute mole fractions of ethanol and glycerin
+X_etoh = etoh_mol / (etoh_mol + gly_mol)
+X_gly = gly_mol / (etoh_mol + gly_mol)
+
+## Compute solution vapor pressure from ethanol vapor pressure from Raoult's Law
+P_soln = Pstar_gly * X_gly + Pstar_etoh * X_etoh
+
+print(f"Vapor pressure of ideal solution at 40C: P = {P_soln:4.3f} atm")
+#+end_src
+
+#+begin_example
+Vapor pressure of ideal solution at 40C: P = 0.142 atm
+#+end_example
+
+<<a924e076-9f4b-4ef2-8484-059fa6097094>>
+~~~{solution}ex:colligative-prop :class:dropdown :open:false One
+possible solution for the problem could be
+
+```{code}python :linenos: :filename:Python Input
+
+* YOUR TURN: Solve the exercise above here!
+:PROPERTIES:
+:CUSTOM_ID: your-turn-solve-the-exercise-above-here
+:END:
+** Define variables for mass, MW, & vapor pressure for each solution component
+:PROPERTIES:
+:CUSTOM_ID: define-variables-for-mass-mw--vapor-pressure-for-each-solution-component
+:END:
+gly_mass = 92.1 # g gly_MW = 92.094 # g/mol Pstar_gly = 0 # atm
+etoh_mass = 184.4 # g etoh_MW = 46.069 # g/mol Pstar_etoh = 0.178 # atm
+
+** Convert masses of glycerin & ethanol to moles
+:PROPERTIES:
+:CUSTOM_ID: convert-masses-of-glycerin--ethanol-to-moles
+:END:
+gly_mol = gly_mass * (1/gly_MW) etoh_mol = etoh_mass * (1/etoh_MW)
+
+** Compute mole fractions of ethanol and glycerin
+:PROPERTIES:
+:CUSTOM_ID: compute-mole-fractions-of-ethanol-and-glycerin
+:END:
+X_etoh = etoh_mol / (etoh_mol + gly_mol) X_gly = gly_mol / (etoh_mol +
+gly_mol)
+
+** Compute solution vapor pressure from ethanol vapor pressure from Raoult's Law
+:PROPERTIES:
+:CUSTOM_ID: compute-solution-vapor-pressure-from-ethanol-vapor-pressure-from-raoults-law
+:END:
+P_soln = Pstar_gly * X_gly + Pstar_etoh * X_etoh
+
+print(f"Vapor pressure of ideal solution at 40C: P = {P_soln:4.3f} atm")
+
+#+begin_example
+```{code}txt
+:filename:Cell Output
+Vapor pressure of ideal solution at 40C: P = 0.142 atm
+#+end_example
+
+~~~
+
+<<d8135b53-3312-4411-acba-ac71eaca286f>>
+*** Chemical Kinetics
+:PROPERTIES:
+:CUSTOM_ID: chemical-kinetics
+:END:
+:::{exercise} Integrated Rate Law of a 2nd Order Reaction \(\vert\)
+[OpenStax
+$\S\(12.4 ↗️](https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws)
+:label:ex:kinetics
+The reaction of butadiene gas (C\)_4\(H\)_6\() to yield C\)/8\(H\)/{12}$
+gas is described by the equation:
+\[2\ {\rm C_4H_6\ (g)} \longrightarrow {\rm C_8H_{12}\ (g)}\]
+
+This “dimerization” reaction is second order with a rate constant equal
+to \(5.76\times 10^{−2}\ {\rm L\ mol^{-1} min^{−1}}\) under certain
+conditions. If the initial concentration of butadiene is 0.200 M, what
+is the concentration after 10.0 min?
+
+:::{hint}👀 Hint :[[icon:false]] For the general second order elementary
+reaction \[2 {\rm A}\; \rightleftarrows\; {\rm products}\] the 2nd order
+integrated rate law (taken from
+[[https://openstax.org/books/chemistry-2e/pages/12-4-integrated-rate-laws#fs-idm117482272][Table 12.2 in OpenStax $\S$12.4 ↗️]])
+is given by \[\frac{1}{[A]} = kt + \frac{1}{[A]_0}\] ::::::
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+## Variable declaration
+var('A k t A_0', real=True, nonnegative=True)
+
+## Constants given in problem
+k_val = 5.76E-2 # M/min
+A_0_val = 0.200 # M
+t_val = 10 # min
+
+## Define named SymPy expression for 2nd order integrated rate law
+integrated_2nd_order =@ (1 / A) = k*t + (1 / A_0)
+
+## Solve for the concentration of A at later time, and float evaluate
+solve(integrated_2nd_order.subs({k: k_val, A_0: A_0_val, t: t_val}), A)[0].evalf()
+#+end_src
+
+#+RESULTS:
+: Equation(A, 0.179340028694405)
+
+<<0cf5b404-c2a2-4a89-8044-392ff2ff6344>>
+~~~{solution}ex:kinetics :class:dropdown :open:false One possible
+solution for the problem could be
+
+```{code}python :linenos: :filename:Python Input
+
+* YOUR TURN: Solve the exercise above here!
+:PROPERTIES:
+:CUSTOM_ID: your-turn-solve-the-exercise-above-here
+:END:
+** Variable declaration
+:PROPERTIES:
+:CUSTOM_ID: variable-declaration
+:END:
+var('A k t A_0', real=True, nonnegative=True)
+
+** Constants given in problem
+:PROPERTIES:
+:CUSTOM_ID: constants-given-in-problem
+:END:
+k_val = 5.76E-2 # M/min A_0_val = 0.200 # M t_val = 10 # min
+
+** Define named SymPy expression for 2nd order integrated rate law
+:PROPERTIES:
+:CUSTOM_ID: define-named-sympy-expression-for-2nd-order-integrated-rate-law
+:END:
+integrated_2nd_order =@ (1 / A) = k*t + (1 / A_0)
+
+** Solve for the concentration of A at later time, and float evaluate
+:PROPERTIES:
+:CUSTOM_ID: solve-for-the-concentration-of-a-at-later-time-and-float-evaluate
+:END:
+solve(integrated_2nd_order.subs({k: k_val, A_0: A_0_val, t: t_val}),
+A)[0].evalf() ``` :::{note}⏎ Cell Output :[[icon:false]]
+\(A = 0.179340028694405\) ::: ~~~
+
+<<8556daea-005d-4d21-9f5a-25c0e2d4c439>>
+*** Chemical Equilibrium
+:PROPERTIES:
+:CUSTOM_ID: chemical-equilibrium
+:END:
+:::{exercise} Equilibrium Concentrations from Initial Concentrations
+\(\vert\) [OpenStax
+$\S\(13.4 ↗️](https://openstax.org/books/chemistry-2e/pages/13-4-equilibrium-calculations)
+:label:ex:eqm
+Acetic acid (CH\)_3\(CO\)_2\(H) reacts with ethanol (C\)_2\(H\)_5\(OH) to form water and ethyl acetate (CH\)_3\(CO\)_2\(C\)_2\(H\)_5\() in a solution where dioxane (C\)_4\(H\)_8\(O\)_2$;
+d) is the solvent:
+\[{\rm CH_3CO_2H\ (d) + C_2H_5OH\ (d)} \rightleftharpoons {\rm CH_3CO_2C_2H_5\ (d) + H_2O\ (d)}\]
+
+The equilibrium constant for this reaction in dioxane is \(K_c = 4.0\).
+What are the equilibrium concentrations for a mixture that is initially
+0.15 M in CH\(_3\)CO\(_2\)H, 0.15 M in C\(_2\)H\(_5\)OH, 0.40 M in
+CH\(_3\)CO\(_2\)C\(_2\)H\(_5\), and 0.40 M in H\(_2\)O?
+
+:::{hint}👀 Hints :[[icon:false]]
+
+1. This macroscopic equilibrium is occurring in the solvent dioxane ---
+   as indicated in the reaction by the parenthetical phases "(d)" for
+   all species --- /not aqueous solution./ Because it's not an aqueous
+   system, don't forget to include water in your ICE table and reaction
+   quotient expression!!
+2. Don't forget to check which direction the reaction will proceed
+   towards equilibrium by comparing the initial value of \(Q\) to the
+   equilibrium constant \(K_c\).
+3. Rather than trying to solve the entire problem in a single code cell,
+   break it into separate cells where convenient in the problem solving
+   process. ::::::
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+#+end_src
+
+#+begin_src jupyter-python
+# YOUR TURN: Solve the exercise above here!
+## Define Python variables for formal concentrations (F) of each species & eq'm constant (Kc)
+Kc = 4.0
+F_HAc = 0.15  # M
+F_EtOH = 0.15 # M
+F_EtAc = 0.40 # M
+F_H2O = 0.40  # M
+
+## Define SymPy variables & reaction quotient expression
+### Reaction quotient Q & eq'm constant K; define scopes to be positive & real
+var('Q', real=True, positive=True)
+var('K', real=True, positive=True)
+### Change in formal concentration, x; define scope to be real
+var('x', real=True)
+### Concentrations of each species; define scope to be positive & real
+HAc = Symbol('[HAc]')
+EtOH = Symbol('[EtOH]')
+EtAc = Symbol('[EtAC]')
+H2O = Symbol('[H2O]')
+
+### Define SymPy expression for reaction quotient, assign to Python variable rxn_quotient
+rxn_quotient =@ Q = (EtAc * H2O) / (HAc * EtOH)
+
+## Evaluate initial reaction quotient using formal concentrations
+Q_i = rxn_quotient.subs({EtOH: F_EtOH, HAc: F_HAc, EtAc: F_EtAc, H2O: F_H2O}).evalf().rhs
+
+## Compare initial Q value to K, determine direction of net reaction towards equilibrium
+print("Q < K...net rxn rightwards!") if bool(Q_i < Kc) else print("Q > K...net rxn leftwards!")
+
+## Set up reaction quotient expression at equilibrium, with net rxn in correct direction
+K_expression = rxn_quotient.subs({Q: Kc,
+                                  HAc: F_HAc + x,
+                                  EtOH: F_EtOH + x,
+                                  EtAc: F_EtAc - x,
+                                  H2O: F_H2O - x
+                                 })
+
+## Solve K expression for unknown change x
+x1_expr, x2_expr = solve(K_expression, x)
+x1 = float(x1_expr.rhs)
+x2 = float(x2_expr.rhs)
+print(f"Solutions to K expression: x1 = {x1}, x2 = {x2}")
+print(f"Rejecting solution x1 = {x1}, keeping solution x2 = {x2}")
+x_val = x2
+
+## Compute final equilibrium concentrations
+E_HAc = F_HAc + x_val  # M
+E_EtOH = F_EtOH + x_val # M
+E_EtAc = F_EtAc - x_val # M
+E_H2O = F_H2O - x_val  # M
+print("\nEquilibrium concentrations:")
+print(f"\t[HAc]eq = {E_HAc:4.3f} M")
+print(f"\t[EtOH]eq = {E_EtOH:4.3f} M")
+print(f"\t[EtAc]eq = {E_EtAc:4.3f} M")
+print(f"\t[H2O]eq = {E_H2O:4.3f} M")
+
+## Check that equilibrium concentrations get close to equilibrium constant when plugged back into Q expr
+sanity = bool(rxn_quotient.subs({Q: Kc,
+                                 HAc: E_HAc,
+                                 EtOH: E_EtOH,
+                                 EtAc: E_EtAc,
+                                 H2O: E_H2O
+                                 })
+             )
+print(f"\nSanity Check: Does plugging eq'm []s back into Q recover K? {sanity}")
+#+end_src
+
+#+begin_example
+Q > K...net rxn leftwards!
+Solutions to K expression: x1 = -0.7, x2 = 0.03333333333333333
+Rejecting solution x1 = -0.7, keeping solution x2 = 0.03333333333333333
+
+Equilibrium concentrations:
+	[HAc]eq = 0.183 M
+	[EtOH]eq = 0.183 M
+	[EtAc]eq = 0.367 M
+	[H2O]eq = 0.367 M
+
+Sanity Check: Does plugging eq'm []s back into Q recover K? True
+#+end_example
+
+<<8283c5d9-8213-47ca-bdbe-51540873ccd2>>
+~~~{solution}ex:eqm :class:dropdown :open:false One possible solution
+for the problem could be
+
+```{code}python :linenos: :filename:Python Input
+
+* YOUR TURN: Solve the exercise above here!
+:PROPERTIES:
+:CUSTOM_ID: your-turn-solve-the-exercise-above-here
+:END:
+** Define Python variables for formal concentrations (F) of each species & eq'm constant (Kc)
+:PROPERTIES:
+:CUSTOM_ID: define-python-variables-for-formal-concentrations-f-of-each-species--eqm-constant-kc
+:END:
+Kc = 4.0 F_HAc = 0.15 # M F_EtOH = 0.15 # M F_EtAc = 0.40 # M F_H2O =
+0.40 # M
+
+** Define SymPy variables & reaction quotient expression
+:PROPERTIES:
+:CUSTOM_ID: define-sympy-variables--reaction-quotient-expression
+:END:
+*** Reaction quotient Q & eq'm constant K; define scopes to be positive & real
+:PROPERTIES:
+:CUSTOM_ID: reaction-quotient-q--eqm-constant-k-define-scopes-to-be-positive--real
+:END:
+var('Q', real=True, positive=True) var('K', real=True, positive=True)
+
+*** Change in formal concentration, x; define scope to be real
+:PROPERTIES:
+:CUSTOM_ID: change-in-formal-concentration-x-define-scope-to-be-real
+:END:
+var('x', real=True)
+
+*** Concentrations of each species; define scope to be positive & real
+:PROPERTIES:
+:CUSTOM_ID: concentrations-of-each-species-define-scope-to-be-positive--real
+:END:
+HAc = Symbol('[HAc]') EtOH = Symbol('[EtOH]') EtAc = Symbol('[EtAC]')
+H2O = Symbol('[H2O]')
+
+*** Define SymPy expression for reaction quotient, assign to Python variable rxn_quotient
+:PROPERTIES:
+:CUSTOM_ID: define-sympy-expression-for-reaction-quotient-assign-to-python-variable-rxn_quotient
+:END:
+rxn_quotient =@ Q = (EtAC * H2O) / (HAc * EtOH)
+
+** Evaluate initial reaction quotient using formal concentrations
+:PROPERTIES:
+:CUSTOM_ID: evaluate-initial-reaction-quotient-using-formal-concentrations
+:END:
+Q_i = rxn_quotient.subs({EtOH: F_EtOH, HAc: F_HAc, EtAC: F_EtAc, H2O:
+F_H2O}).evalf().rhs
+
+** Compare initial Q value to K, determine direction of net reaction towards equilibrium
+:PROPERTIES:
+:CUSTOM_ID: compare-initial-q-value-to-k-determine-direction-of-net-reaction-towards-equilibrium
+:END:
+print("Q < K...net rxn rightwards!") if bool(Q_i < Kc) else print("Q >
+K...net rxn leftwards!")
+
+** Set up reaction quotient expression at equilibrium, with net rxn in correct direction
+:PROPERTIES:
+:CUSTOM_ID: set-up-reaction-quotient-expression-at-equilibrium-with-net-rxn-in-correct-direction
+:END:
+K_expression = rxn_quotient.subs({Q: Kc, HAc: F_HAc + x, EtOH: F_EtOH +
+x, EtAc: F_EtAc - x, H2O: F_H2O - x })
+
+** Solve K expression for unknown change x
+:PROPERTIES:
+:CUSTOM_ID: solve-k-expression-for-unknown-change-x
+:END:
+x1_expr, x2_expr = solve(K_expression, x) x1 = float(x1_expr.rhs) x2 =
+float(x2_expr.rhs) print(f"Solutions to K expression: x1 = {x1}, x2 =
+{x2}") print(f"Rejecting solution x1 = {x1}, keeping solution x2 =
+{x2}") x_val = x2
+
+** Compute final equilibrium concentrations
+:PROPERTIES:
+:CUSTOM_ID: compute-final-equilibrium-concentrations
+:END:
+E_HAc = F_HAc + x_val # M E_EtOH = F_EtOH + x_val # M E_EtAc = F_EtAc -
+x_val # M E_H2O = F_H2O - x_val # M print("\nEquilibrium
+concentrations:") print(f"\t[HAc]eq = {E_HAc:4.3f} M")
+print(f"\t[EtOH]eq = {E_EtOH:4.3f} M") print(f"\t[EtAc]eq =
+{E_EtAc:4.3f} M") print(f"\t[H2O]eq = {E_H2O:4.3f} M")
+
+** Check that equilibrium concentrations get close to equilibrium constant when plugged back into Q expr
+:PROPERTIES:
+:CUSTOM_ID: check-that-equilibrium-concentrations-get-close-to-equilibrium-constant-when-plugged-back-into-q-expr
+:END:
+sanity = bool(rxn_quotient.subs({Q: Kc, HAc: E_HAc, EtOH: E_EtOH, EtAc:
+E_EtAc, H2O: E_H2O }) ) print(f"\nSanity Check: Does plugging eq'm []s
+back into Q recover K? {sanity}")
+
+#+begin_example
+```{code}python
+:filename:Cell Output
+Q > K...net rxn leftwards!
+Solutions to K expression: x1 = -0.7, x2 = 0.03333333333333333
+Rejecting solution x1 = -0.7, keeping solution x2 = 0.03333333333333333
+
+Equilibrium concentrations:
+	[HAc]eq = 0.183 M
+	[EtOH]eq = 0.183 M
+	[EtAc]eq = 0.367 M
+	[H2O]eq = 0.367 M
+
+Sanity Check: Does plugging eq'm []s back into Q recover K? True
+#+end_example
+
+~~~
+
+<<4aad4f0a-4f91-483c-8586-6c96c9182181>>
+** Auto-Generation of Student Versions
+:PROPERTIES:
+:CUSTOM_ID: auto-generation-of-student-versions
+:END:
+
+<<fcc2af22-e6c1-40ae-905e-3245d5556f62>>
+To maximize the usability of these educational materials for adopting
+instructors, each lesson should be provided in three different versions:
+
+| Modality     | Pedagogy                | Role of Instructor                                                       | Lesson Version            |
+|--------------+-------------------------+--------------------------------------------------------------------------+---------------------------|
+| Asynchronous | Guided Inquiry Learning | N/A (independent student learning)                                       | =student-async.ipynb=     |
+| Synchronous  | Guided Inquiry Learning | Facilitate student process, answer questions, ensure nobody falls behind | =student-sync-gil.ipynb=  |
+| Synchronous  | LiveCoding              | Demonstrate & narrate process, control pacing, etc.                      | =student-sync-live.ipynb= |
+
+<<a060bc42-c278-45bd-92d6-5917843258f2>>
+Managing these student versions is a significant burden for the author
+during both the initial development of the lesson and in any subsequent
+phases of its revision. Fortunately, it is possible to use the
+=jupyter-nbconvert= package to /automatically/ generate the three
+student
+versions.[[file:Thanks%20to%20Steve%20Singleton%20for%20figuring%20out%20how%20to%20use%20%60jupyter-nbconvert%60%20to%20do%20this!][^fn:nbconvert-student-versions]]
+
+To use =jupyter-nbconvert= to automatically generate the student
+versions of this lesson,
+
+1. Define which cells should be deleted in each student version by
+   adding cell tags to each cell in this notebook
+   - See table below for which cell tags should be applied to each cell
+   - Refer to
+     [[https://mystmd.org/guide/notebook-configuration#notebook-cell-tags][this section of the MySTMD documentation (launch ↗️)]]
+     for a step-by-step tutorial
+2. Execute each of the command cells below to generate the student
+   lesson versions
+
+<<bd054e38-a6a3-4342-820f-ce6e072ab29f>>
+The following cell types should be included in each version:
+
+| Cell Type/Contents                  | Key | Async | Sync-GIL | Sync-Live | Cell Tags            |
+|-------------------------------------+-----+-------+----------+-----------+----------------------|
+| Markdown header                     | ✅  | ✅    | ✅       | ✅        | None                 |
+| "EXECUTE" Code Cell (=import=/demo) | ✅  | ✅    | ✅       | ✅        | None                 |
+| Instructional narrative             | ✅  | ✅    | ✅       | ❌        | =live=               |
+| 🐍 Python Syntax                    | ✅  | ✅    | ✅       | ❌        | =live=               |
+| ℹ️ Note/Definition                   | ✅  | ✅    | ✅       | ❌        | =live=               |
+| 👀 Tip                              | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| ⚠️ Warning                           | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| ☢️ Danger                            | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| ⚒️ Your Turn                         | ✅  | ✅    | ✅       | ✅        | None                 |
+| 🪞 Student Reflection               | ✅  | ✅    | ✅       | ✅        | None                 |
+| 💡 Hint                             | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Student Exercise                    | ✅  | ✅    | ✅       | ✅        | None                 |
+| Blank code cell (student entry)     | ✅  | ✅    | ✅       | ❌        | =live=               |
+| Complete code key (lesson author)   | ✅  | ❌    | ❌       | ❌        | =async= =gil= =live= |
+| ✅ Check Yo'Self                    | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Solution to Exercise                | ✅  | ❌    | ❌       | ❌        | =async= =gil= =live= |
+| Lesson Learning Outcomes            | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Cyberinfrastructure Prereqs         | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Content Prereqs                     | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Resources                           | ✅  | ✅    | ✅       | ✅        | None                 |
+| References                          | ✅  | ✅    | ❌       | ❌        | =gil= =live=         |
+| Student Version Generation (all)    | ✅  | ❌    | ❌       | ❌        | =async= =gil= =live= |
+
+#+begin_src jupyter-python
+# Generate student-async version
+!jupyter nbconvert instructor-key.ipynb  --to notebook \
+    --TagRemovePreprocessor.enabled=True \
+    --ClearOutputPreprocessor.enabled=True \
+    --TagRemovePreprocessor.remove_cell_tags=\[\"async\"\] \
+    --output student-async.ipynb
+#+end_src
+
+#+begin_example
+[NbConvertApp] Converting notebook instructor-key.ipynb to notebook
+[NbConvertApp] Writing 27196 bytes to student-async.ipynb
+#+end_example
+
+#+begin_src jupyter-python
+# Generate student-sync-gil version
+!jupyter nbconvert instructor-key.ipynb  --to notebook \
+    --TagRemovePreprocessor.enabled=True \
+    --ClearOutputPreprocessor.enabled=True \
+    --TagRemovePreprocessor.remove_cell_tags=\[\"async\"\,\"gil\"\] \
+    --output student-sync-gil.ipynb
+#+end_src
+
+#+begin_example
+[NbConvertApp] Converting notebook instructor-key.ipynb to notebook
+[NbConvertApp] Writing 27196 bytes to student-sync-gil.ipynb
+#+end_example
+
+#+begin_src jupyter-python
+# Generate student-sync-live version
+!jupyter nbconvert instructor-key.ipynb  --to notebook \
+    --TagRemovePreprocessor.enabled=True \
+    --ClearOutputPreprocessor.enabled=True \
+    --TagRemovePreprocessor.remove_cell_tags=\[\"async\"\,\"gil\"\,\"live\"\] \
+    --output student-sync-live.ipynb
+#+end_src
+
+#+begin_example
+[NbConvertApp] Converting notebook instructor-key.ipynb to notebook
+[NbConvertApp] Writing 26443 bytes to student-sync-live.ipynb
+#+end_example
+
+#+begin_src jupyter-python
+#+end_src

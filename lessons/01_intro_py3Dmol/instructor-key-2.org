@@ -1,0 +1,52 @@
+<<b2aeebeb-8bac-487c-8b90-822711b37bf4>>
+
+* Introduction to py3Dmol
+:PROPERTIES:
+:CUSTOM_ID: introduction-to-py3dmol
+:END:
+The purpose of this lesson is to help students develop
+cyberinfrastructure (CI) skills in data visualization, with some
+applications to molecular visualization.
+
+** Lesson Information
+:PROPERTIES:
+:CUSTOM_ID: lesson-information
+:END:
+
+*** Lesson Learning Outcomes (LOs)
+:PROPERTIES:
+:CUSTOM_ID: lesson-learning-outcomes-los
+:END:
+
+1. Cyberinfrastructure LOs
+
+   By the end of this lesson, students will be able to perform the
+   following cyberinfrastructure (CI) tasks:
+
+   1. Use py3Dmol to represent molecules in 3D space.
+
+2. Content LOs
+
+   By the end of this lesson, students will be able to:
+
+   1. Use py3Dmol to represent molecules in 3D space. separate list of
+      LOs
+
+*** Lesson Prerequisites
+:PROPERTIES:
+:CUSTOM_ID: lesson-prerequisites
+:END:
+
+1. Cyberinfrastructure Prereq's
+
+   Before beginning this lesson, students are expected to have the
+   following CI skills:
+
+   1. Have a Jupyter/python environment
+
+2. Content Prereq's
+
+   Before beginning this lesson, students are expected to be familiar
+   with the following content topics:
+
+   1. VSEPR
